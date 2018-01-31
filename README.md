@@ -13,8 +13,7 @@ Don't close the terminal and keep them running!
 ##### Steps: 
 
 Navigate to the terminal where are running mongod.exe.
-Type in the command <b>use heroes</b> and press enter.
-With <b>show dbs</b> you can confirm that you have created the database.
+Type in the command <b>use heroes</b> and press enter to create the database heroes.
 
 ### Run the NodeJS app 
 
@@ -40,6 +39,8 @@ Adding a hero requires you to log in. After adding a hero, click on the name of 
 
 # Possible issues
 
+If NPM is being a bitch when you try to install NodeJS packages, install the packages seperately according to package.JSON
+###
 If the requests are taking the first time you start the projects, restart the NodeJS app and try again.
 ###
 For CORS issues, create an issue of the exact http status code or error.
