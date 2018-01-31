@@ -1,0 +1,10 @@
+<div class="container">
+  <div>
+    <h2><a [routerLink]="['/hero',hero._id]">{{ hero.name }}</a></h2>
+    <div class="avatar">
+      <img [src]="hero.avatar" alt="avatar">      
+    </div>   
+    <h5>difficulty: {{ hero.difficulty }}</h5>
+    <h5>dps: {{ hero.dps }}</h5>
+  </div>  
+</div>

@@ -1,0 +1,11 @@
+<p *ngIf="updated">Hero updated successfully</p>
+<p *ngIf="deleted">Hero deleted successfully</p>
+<form [formGroup]="form" (ngSubmit)="submit(form)">
+  <p *ngIf="form.invalid">Please make sure nothing is empty and all inputs are correct!</p>
+  <label>Name:</label><input [(ngModel)]="hero.name" type="text" formControlName="name" [ngClass]="{error: form.get('name').hasError('required')}" ><br>
+  <label>Difficulty</label><input [(ngModel)]="hero.difficulty" type="text" formControlName="difficulty" [ngClass]="{error: form.get('difficulty').hasError('required')}"><br>
+  <label>Dps</label><input [(ngModel)]="hero.dps" type="text" formControlName="dps" [ngClass]="{error: form.get('dps').hasError('required')}"><br>
+  <button [disabled]="form.invalid" type="submit">Update</button>
+</form>
+
+<button (click)="removeHero(hero._id)">Delete</button>

@@ -1,0 +1,2 @@
+<app-search (nameFilter)="filterName($event)" (difficultyFilter)="filterDifficulty($event)"></app-search>
+<app-hero *ngFor="let hero of heroList | difficultyPipe:difficulty | namePipe:name" [hero]="hero"></app-hero>

@@ -1,0 +1,12 @@
+<div class="search-container">
+  <h2>Filter heroes</h2>
+  <label>Name:</label>
+  <input (keyup)="filterName($event.target.value)" type="text" placeholder="filter name">
+  <label>Difficulty:</label>
+  <select (change)="filterDifficulty($event.target.value)">
+    <option>All</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+</div>
