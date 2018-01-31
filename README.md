@@ -1,41 +1,47 @@
-1. Make sure you have mongodb installed and running 
+# Setup guide
 
-Steps:
+### Make sure you have mongodb installed and running 
 
-Go to C:\Program Files\MongoDB\Server\3.6\bin> 
-run both mongod.exe and mongo.exe in this directory 
+##### Steps:
+
+Go to <b>C:\Program Files\MongoDB\Server\3.6\bin></b>.
+Run both mongod.exe and mongo.exe in this directory. 
 Don't close the terminal and keep them running!
 
-2. Create a database "heroes" in mongodb
+### Create a database "heroes" in mongodb
 
-Steps: 
+##### Steps: 
 
-Navigate to the terminal where are running mongod.exe
-Type in the command "use heroes" and press enter
-With "show dbs" you can confirm that you have created the database
+Navigate to the terminal where are running mongod.exe.
+Type in the command <b>use heroes</b> and press enter.
+With <b>show dbs</b> you can confirm that you have created the database.
 
-3. Run the NodeJS app 
+### Run the NodeJS app 
 
-Steps: 
+##### Steps:
 
-Navigate to the root directory of the NodeJS project and execute "npm install"
+Navigate to the root directory of the NodeJS project and execute <b>npm install</b>
 This will install packages according to the package.JSON
-Run "npm start" after to run the NodeJS app and keep it running!
+Run <b>npm start</b> after to run the NodeJS app and keep it running!
 
-4. Run the Angular app
+### Run the Angular app
 
-Steps: 
+##### Steps: 
 
-Navigate to the root of the Angular project and execute "npm install" 
-Run "ng serve -o" to run the application
+Navigate to the root of the Angular project and execute <b>npm install</b> 
+Run <b>ng serve -o</b> to run the application
 
-5. Test the CRUD features
+### Test the CRUD features
 
-Steps:
+##### Steps:
 
-A webpage will open after running the Angular app.
-The /list route should contain no heroes at first until you add them
-Adding a hero requires you to log in
-After adding a hero, click on the name of a Hero to update/remove it
-If the requests are taking too long then restart the NodeJS app!!
-For CORS issues, Google is your best friend.
+A webpage will open after running the Angular app. The <b>/list</b> route should contain no heroes at first until you add them.
+Adding a hero requires you to log in. After adding a hero, click on the name of a Hero to view details or update/remove it.
+
+# Possible issues
+
+If the requests are taking the first time you start the projects, restart the NodeJS app and try again.
+###
+For CORS issues, create an issue of the exact http status code or error.
+###
+Most issues will be the result of MongoDB connection error, so check and debug your MongoDB connection and make sure you have created a database and can successfully connect to one. 
