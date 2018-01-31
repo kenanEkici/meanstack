@@ -41,7 +41,7 @@ Adding a hero requires you to log in. After adding a hero, click on the name of 
 
 If NPM is being a bitch when you try to install NodeJS packages, install the packages seperately according to package.JSON
 ###
-If the requests are taking the first time you start the projects, restart the NodeJS app and try again.
+If the requests are taking too long the first time you start the projects, restart the NodeJS app and try again.
 ###
 For CORS issues, create an issue of the exact http status code or error.
 ###
