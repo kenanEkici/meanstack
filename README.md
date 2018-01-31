@@ -20,16 +20,16 @@ With <b>show dbs</b> you can confirm that you have created the database.
 
 ##### Steps:
 
-Navigate to the root directory of the NodeJS project and execute <b>npm install</b>
-This will install packages according to the package.JSON
+Navigate to the root directory of the NodeJS project and execute <b>npm install</b>.
+This will install packages according to the package.JSON.
 Run <b>npm start</b> after to run the NodeJS app and keep it running!
 
 ### Run the Angular app
 
 ##### Steps: 
 
-Navigate to the root of the Angular project and execute <b>npm install</b> 
-Run <b>ng serve -o</b> to run the application
+Navigate to the root of the Angular project and execute <b>npm install</b>.
+Run <b>ng serve -o</b> to run the application.
 
 ### Test the CRUD features
 
